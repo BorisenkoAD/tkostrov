@@ -621,10 +621,10 @@
 					Ждём от Вас отзывов и предложений о сотрудничестве.
 					</p>
 				</div>
-			<form>			
+			<form method="post" action="mail.php">			
 					<div class="row">
 						<div class="col-sm-6">
-							<input type="text" class="form-control form__input marg25" id="exampleInputName1" placeholder="Имя">
+							<input type="text" class="form-control form__input marg25" id="exampleInputName1" required placeholder="Имя">
 						</div>
 						<div class="col-sm-6">
 							<input type="text" class="form-control form__input marg25" id="exampleInputLastName1" placeholder="Фамилия">
@@ -635,12 +635,12 @@
 							<input type="email" class="form-control form__input marg25" id="exampleInputEmail1" placeholder="E-mail">
 						</div>
 						<div class="col-sm-6">
-							<input type="tel" class="form-control form__input marg25" id="phone" placeholder="Телефон">
+							<input type="tel" class="form-control form__input marg25" id="exampleInputTel1" required placeholder="Телефон">
 						</div>					
 					</div>
 					<div class="row">
 						<div class="col-sm-12">				
-							<textarea class="form-control form__textarea marg25" placeholder="Сообщение" id="exampleInputTextArea1" rows=""3"></textarea>
+							<textarea class="form-control form__textarea marg25" placeholder="Сообщение" id="exampleInputTextArea1" rows="3"></textarea>
 						</div>
 					</div>	
 					<div class="row">
@@ -718,7 +718,7 @@ alt="Яндекс.Метрика" title="Яндекс.Метрика: данны
 	<script src="libs/stellar/jquery.stellar.min.js"></script>
 	<script src="libs/scrollup/scrollup.js"></script>
 	<script>
-	// выравнивание по высоте в блоках
+	//equalheight - одинаковая высота колонок
 		  var k = jQuery.noConflict();
 	  function equalHeight(group) {
 		var tallest = 0;
