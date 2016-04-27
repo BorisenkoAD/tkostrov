@@ -36,7 +36,7 @@
 	<link rel="apple-touch-icon" href="http://tkostrov.spb.ru/test/img/bg_dash_small.jpg" />
 	<meta property="og:image" content="http://tkostrov.spb.ru/test/img/bg_dash_small.jpg" />
     <title>ОСТРОВ</title>
-	<meta name="description" content="Остров, Индустриальный пр., 19"> 
+	<meta name="description" content="Остров на Индустриальном 19"> 
 	<meta name="keywords" content="торговый центр комплекс остров аренда магазин павильон услуги кафе арендатор">
     <!-- Bootstrap -->
 	<link href="css/normalize.css" rel="stylesheet">
@@ -654,10 +654,10 @@
 	<footer>
 		<div class="container">
 			<div class="row">
-				<div class="col-lg-2">
+				<div class="col-sm-2">
 					<p class="footer_text"><a href="/">TKOSTROV.RU 2016</a></p>
 				</div>
-				<div class="col-lg-8">
+				<div class="col-sm-8">
 					<nav class="bot_mnu text-uppercase">
 						<ul class="nav navbar-nav">
 							<li><a href="#shop">магазины</a></li>
@@ -669,13 +669,12 @@
 						</ul>					
 					</nav>
 				</div>
-				<div class="col-lg-1">
+				<div class="col-sm-2">
 <!-- Yandex.Metrika informer -->
 <a href="https://metrika.yandex.ru/stat/?id=36735145&amp;from=informer"
 target="_blank" rel="nofollow"><img src="https://informer.yandex.ru/informer/36735145/3_1_42464EFF_22262EFF_1_uniques"
 alt="Яндекс.Метрика" title="Яндекс.Метрика: данные за сегодня (просмотры, визиты и уникальные посетители)" /></a>
 <!-- /Yandex.Metrika informer -->
-
 <!-- Yandex.Metrika counter -->
 <script type="text/javascript">
     (function (d, w, c) {
@@ -705,11 +704,6 @@ alt="Яндекс.Метрика" title="Яндекс.Метрика: данны
 <noscript><div><img src="https://mc.yandex.ru/watch/36735145" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
 <!-- /Yandex.Metrika counter -->
 				</div>
-				<div class="col-lg-1">
-					<a href="#top">
-						<img src="img/up.png" alt="перейти на верх страницы">
-					</a>
-				</div>
 			</div>	
 		</div>			
 	</footer>
@@ -718,6 +712,7 @@ alt="Яндекс.Метрика" title="Яндекс.Метрика: данны
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="js/bootstrap.min.js"></script>	
 	<script>
+	// выравнивание по высоте в блоках
 		  var k = jQuery.noConflict();
 	  function equalHeight(group) {
 		var tallest = 0;
@@ -733,18 +728,7 @@ alt="Яндекс.Метрика" title="Яндекс.Метрика: данны
 		equalHeight(k(".equalheight"));
 	  });
 	 </script>
-	 <script>
-	//Кнопка "Наверх"
-	//Документация:
-	//http://api.jquery.com/scrolltop/
-	//http://api.jquery.com/animate/
-	jQuery("#top").click(function () {
-		jQuery("body, html").animate({
-			scrollTop: 0
-		}, 800);
-		return false;
-	});
-	</script>
+
 	<script> 	
     jQuery('a[href^="#"], a[href^="."]').click( function(){ // если в href начинается с # или ., то ловим клик
 	    var scroll_el = jQuery(this).attr('href'); // возьмем содержимое атрибута href
