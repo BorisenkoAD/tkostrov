@@ -1,4 +1,250 @@
-footer, nav, header, section, aside 
-{
-display: block 
+body {
+	font-family: Myriad Pro;
 }
+.item{
+    background: #333;    
+    text-align: center;
+    height: 300px !important;
+}
+.carousel{
+    margin-top: 20px;
+}
+.text-blue__brand {
+	font-family: Impact;
+	font-size: 54px;
+	font-weight: bold;
+	color: #18ceec;
+}
+.text-blue {
+	color: #18ceec;
+}
+.text-black {
+	color: #000000;
+}
+.text-white__name {
+	font-family: Minion Pro;
+	font-size: 134px;
+	font-weight: bold;
+	color: #fff;
+}
+.text-white__slogan {
+	font-family: Minion Pro;
+	font-size: 72px;
+	color: #fff;
+}
+.title-name {
+	font-family: Lucida Sans Unicode;
+	font-size: 48px;
+	color: #272727;
+	padding-top: 47px;
+}
+.title-name_white{
+	font-family: Lucida Sans Unicode;
+	font-size: 48px;
+	color: #fff;
+	padding-top: 67px;
+}
+.name {
+	font-family: Minion Pro;
+	font-size: 30px;
+	color: #362d2a;	
+}
+.desc {
+	font-family: Minion Pro;
+	font-size: 18px;
+	color: #362d2a;	
+}
+.image {
+	max-width: 100%;
+/* 	height: 208px;
+	filter: alpha (Opacity=25);
+    opacity: 0.25;  */
+}
+.padding80 {
+	padding-top: 50px;
+}
+.marg25{
+	margin-top: 25px;
+}
+.vertical-align {
+    display: flex;
+    align-items: center;
+}
+/* HEADER START */
+header {
+	min-height: 640px;
+	background-image: url(../img/bg.jpg);
+	background-size: cover;
+	background-position: center;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;	
+	padding-top: 50px;
+	padding-bottom: 210px;  
+}
+.header__text {
+	padding-top: 345px;
+}
+.header__img {
+	margin-top: -50px;
+}
+.time_to_work {
+	float:right;
+	color: #18ceec;
+	font-size: 35px;
+	
+}
+.clock, .timeTW {
+	display: inline-block;
+	vertical-align: top;
+}
+/* HEADER END */
+
+/*SHOPS START*/
+.shops{
+	background-color: #fff;
+	padding-bottom: 50px;
+}
+/*SHOPS END*/
+/*services START*/
+.services {
+	background-color: #fff;
+	padding-bottom: 50px;
+}
+/*services END*/
+/*cafe START*/
+.cafe {
+	background-color: #fff;
+	padding-bottom: 50px;
+}
+/*cafe END*/
+
+/* ABOUT START */
+.about {
+	padding-bottom: 50px;
+/*  	background-image: url(../img/bg_dash.jpg);
+	background-size: cover;
+	background-position: center;
+	padding-top: 50px;
+	padding-bottom: 50px;
+	margin-top: 50px; */
+	background-color: #fff;
+}
+.about_text {
+	font-size: 16px;
+	color" #000;
+}
+.about a, a:hover { 
+	text-decoration: none; 
+	color: #000;
+}
+.about_vert_Align {
+	padding-top: 13px;
+}
+/*.about_img {
+	filter: alpha (Opacity=25);
+    opacity: 0.25
+}
+.about_img:hover {
+	filter: alpha (Opacity=100);
+    opacity: 1;
+}*/
+/* ABOUT END */
+
+/* ROUTE START */
+.route {
+	background-color: #fff;
+	padding-bottom: 50px;
+}
+.route_text {
+	font-size: 16px;
+	color" #000;	
+}
+/* ROUTE END */
+
+/*employer START*/
+.employer {
+	background-color: #fff;
+	padding-bottom: 50px;
+
+}
+.employer_text {
+	font-size: 35px;
+ 	line-height: 1; 
+	padding-top: 11px;
+}
+.employer_text a, a:hover {
+	text-decoration: none; 
+	color: #000;
+}
+.employer_vert_Align {
+	padding-top: 21px;	
+}
+/*employer END*/
+
+/*FORM START*/
+.form {
+	background-color: #fff;
+	padding-bottom: 50px;
+	padding-top: 50px;
+}
+.form_text {
+	font-size: 35px;
+}
+
+.form__input {
+	border: 1px solid #a4a4a4;
+	background-color: transparent;
+	/*color: #18ceec;*/
+	border-radius: 3px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	display: block;
+	width: 100%;
+	padding-left: 10px;
+}
+.form__textarea {
+	border: 1px solid #a4a4a4;
+	background-color: transparent;
+	/*color: #18ceec;*/
+	border-radius: 3px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	display: block;
+	width: 100%;
+	padding-left: 10px;
+}
+
+/*FORM END*/
+
+/*FOOTER START*/
+footer {
+	background-color: #22262e;
+/* 	padding: 28px 0 35px; */
+	font-size: 16px;
+	
+}
+
+footer a {
+	color: #fff;	
+/* 	padding: 0 5px; */
+}
+.footer_text {
+	color: #fff;
+	padding-top: 15px;
+}
+footer ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+footer li {
+float: left;
+}
+footer img {
+	padding-top: 10px;	
+}
+.bot_mnu {
+	
+}
+/*FOOTER END*/

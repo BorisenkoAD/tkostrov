@@ -1,52 +1,758 @@
-<!DOCTYPE html>
-<html lang="ru">
-<head>
-<meta http-equiv="Content-Type" content="text/html; charset=windows-1251">
-<!--[if IE]>
-<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-<![endif]-->
-<title>����� ����</title>
-<link rel="stylesheet" href="css/reset.css" type="text/css" />
-<link rel="stylesheet" href="css/style.css" type="text/css" />
-</head>
-<body>
- 
-<!-- ����� ����� -->
- 
-<header id="headerInner">
+﻿<!DOCTYPE html>
+<html lang="rus">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+	
+<!-- <link rel="image_src" href="http://сайт.ru/img/externallogo1.jpg" /> //для вконтакте
+<meta property="og:title" content="Название сраницы" />
+<meta property="og:type" content="website"/>
+<meta property="og:image" content="http://сайт.ru/img/externallogo1.jpg" />  //фото для фейсбука, вибера, скайпа и пр.
+<meta property="og:url" content="http://сайт.ru/" /> //адрес сайта
+<meta property="og:description" content="Описание сайта." />
+<meta property="og:site_name" content="Название сайта" />
+<meta property="og:locale" content="ru_RU" />
+<meta property="fb:admins" content="100009041660000" />  //id админа фейсбука для статистики
+    <!-- Google Plus -->
+<!-- <meta itemprop="name" content="Название страницы"/>
+<meta itemprop="description" content="Описание страницы"/>
+<meta itemprop="image" content="http://сайт.ru/img/externallogo.jpg"/> -->
+    <!-- Twitter -->
+<!-- <meta name="twitter:card" content="summary"/>  <!-- Тип окна -->
+<!-- <meta name="twitter:site" content="название сайта"/>
+<meta name="twitter:title" content="Название страницы">
+<meta name="twitter:description" content="Описание страницы"/>
+<meta name="twitter:creator" content="имя создателя"/>
+<meta name="twitter:image:src" content="http://сайт.ru/img/externallogo.jpg"/>
+<meta name="twitter:domain" content="сайт.ru"/> -->
+    <!-- Apple -->             <!-- //картинки для избранного и на рабочий стол для apple устройств
+<link rel="apple-touch-icon" href="touch-icon-iphone.png">
+<link rel="apple-touch-icon" sizes="76x76" href="touch-icon-ipad.png">
+<link rel="apple-touch-icon" sizes="120x120" href="touch-icon-iphone-retina.png">
+<link rel="apple-touch-icon" sizes="152x152" href="touch-icon-ipad-retina.png"> -->
 
-<!-- ��������� -->
- 
-<nav class="bottomMenu">
-<ul>
-		<li><a href = "#">��������</a></li>
-		<li><a href = "#">� ���</a></li>
-		<li><a href = "#">������</a></li>
-</ul>
-</nav>
-<!-- ����� ��������� -->
- 
-</header><!-- ����� ����� ����� -->
- 
-<section id="wrapper"><!-- �������� ���� -->
- 
-<aside id="colLeft"><!-- ���� ��� ��� ������������ ����� -->
-<!-- ������ ����� -->
-<article class="postBox">
-<!-- ......... -->
-</article>
-<!-- ������ ����� -->
- 
-<aside id="colRight"> <!-- ���� ������� ������� -->
-<!-- ......... -->
-</aside>
- 
-</div>
-</section>
- 
-<footer id="footerInner"><!-- ����� ����� -->
-<!-- ......... -->
-</footer>
- 
-</body>
+	<link rel="apple-touch-icon" href="http://tkostrov.spb.ru/test/img/bg_dash_small.jpg" />
+	<meta property="og:image" content="http://tkostrov.spb.ru/test/img/bg_dash_small.jpg" />
+    <title>ОСТРОВ</title>
+	<meta name="description" content="Остров, Индустриальный пр., 19"> 
+	<meta name="keywords" content="торговый центр комплекс остров аренда магазин павильон услуги кафе арендатор">
+    <!-- Bootstrap -->
+	<link href="css/normalize.css" rel="stylesheet">
+    <link href="css/bootstrap.css" rel="stylesheet">
+	<link href="css/fonts.css" rel="stylesheet">
+	<link href="css/style.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+	<div style="display:none">
+	<img src="http://tkostrov.spb.ru/img/bg_dash_small.jpg"/>
+	</div>
+	<a id="top"></a>
+    <header>
+		<nav role="navigation" class="navbar navbar-default">
+	  <!-- Brand and toggle get grouped for better mobile display -->
+			<div class="navbar-header">
+				<button type="button" data-target="#navbarCollapse" data-toggle="collapse" class="navbar-toggle">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a href="#" class="navbar-brand text-uppercase"><span class="text-blue__brand">остров</span></a>
+			</div>
+			<!-- Collection of nav links, forms, and other content for toggling -->
+			<div id="navbarCollapse" class="collapse navbar-collapse text-uppercase">
+				<ul class="nav navbar-nav">
+					<li><a href="#shop">магазины</a></li>
+					<li><a href="#services">услуги</a></li>
+					<li><a href="#cafe">кафе</a></li>
+					<li><a href="#about">об "острове"</a></li>
+					<li><a href="#route">как добраться</a></li>
+					<li><a href="#employer">арендаторам</a></li>
+					<li><a href="#feed">обратная связь</a></li>
+				</ul>
+				<div class="time_to_work hidden-xs hidden-sm hidden-md">
+				<DIV class="clock"><img src="img/small_clock.png" alt="остров магазины, кафе, салоны красоты, аренда торговых площадей"></DIV>
+				<div class="timeTW">10 - 23</div>
+				</div>
+			</div>
+		 </nav>
+	<div class="container">
+		<div class="row">
+			<p class="header__text text-white__name text-uppercase text-center">остров</p>
+			<img src="img/line.png" class="header__img mg-responsive center-block">
+			<p class="text-uppercase text-white__slogan text-center">зайди и отдохни</p>
+		</div>
+	</div>
+	</header>
+	<main>
+	<a id="shop">
+	<section class="shops">
+	</a>
+			<div class="container">
+				<p class="title-name text-uppercase text-center">магазины</p>
+				<div class="row">
+					<div class="col-lg-3 col-md-4 col-sm-6 equalheight">
+						<div class="image">
+							<img src="img/shop/aria_feshn.png" class="center-block img-thumbnail img-responsive" alt="остров магазины, кафе, салоны красоты, аренда торговых площадей Aria feshion Женская одежда">
+						</div>
+						<div>
+							<p class="name text-uppercase text-center">Aria fashion</p>
+						</div>
+						<div>
+							<p class="desc text-center">Женская одежда</p>
+						</div>	
+						<div>
+							<p class="desc text-center">Секция 144</p>
+						</div>							
+					</div>
+					<div class="col-lg-3 col-md-4 col-sm-6 equalheight">
+						<div class="image center-block">
+							<img src="img/shop/dastarhan.png" class="center-block img-thumbnail img-responsive" alt="остров магазины, кафе, салоны красоты, аренда торговых площадей, дастархан, Товары из Казахстана">
+						</div>
+						<div>
+							<p class="name text-uppercase text-center">дастархан</p>
+						</div>
+						<div>
+							<p class="desc text-center">Товары из Казахстана</p>
+						</div>	
+						<div>
+							<p class="desc text-center">Секция 127</p>
+						</div>						
+					</div>
+					<div class="col-lg-3 col-md-4 col-sm-6 equalheight">
+						<div class="image center-block">
+							<img src="img/shop/jeans_style.png" class="center-block img-thumbnail img-responsive" alt="остров магазины, кафе, салоны красоты, аренда торговых площадей, jeans style, Сеть магазинов женской одежды и аксессуаров">
+						</div>
+						<div>
+							<p class="name text-uppercase text-center">jeans style</p>
+						</div>
+						<div>
+							<p class="desc text-center">Сеть магазинов женской одежды и аксессуаров.</p>
+						</div>	
+						<div>
+							<p class="desc text-center">Секция 119</p>
+						</div>						
+					</div>	
+					<div class="col-lg-3 col-md-4 col-sm-6 equalheight">
+						<div class="image center-block">
+							<img src="img/shop/mans_zone.png" class="center-block img-thumbnail img-responsive" alt="остров магазины, кафе, салоны красоты, аренда торговых площадей, территория мужчин, Мужская одежда">
+						</div>
+						<div>
+							<p class="name text-uppercase text-center">территория мужчин</p>
+						</div>
+						<div>
+							<p class="desc text-center">Мужская одежда</p>
+						</div>		
+						<div>
+							<p class="desc text-center">Секция 143</p>
+						</div>						
+					</div>					
+<!-- 				</div>
+				<div class="row"> -->
+					<div class="col-lg-3 col-md-4 col-sm-6 equalheight">
+						<div class="image center-block">
+							<img src="img/shop/nefrit.png" class="center-block img-thumbnail img-responsive" alt="остров магазины, кафе, салоны красоты, аренда торговых площадей, NefriT, Детская одежда и аксессуары">
+						</div>
+						<div>
+							<p class="name text-uppercase text-center">NefriT</p>
+						</div>
+						<div>
+							<p class="desc text-center">Детская одежда и аксессуары</p>
+						</div>	
+						<div>
+							<p class="desc text-center">Секция 140</p>
+						</div>						
+					</div>
+					<div class="col-lg-3 col-md-4 col-sm-6 equalheight">
+						<div class="image center-block">
+							<img src="img/shop/santehnica.png" class="center-block img-thumbnail img-responsive" alt="остров магазины, кафе, салоны красоты, аренда торговых площадей, сантехника, Все для ванной комнаты">
+						</div>
+						<div>
+							<p class="name text-uppercase text-center">сантехника</p>
+						</div>
+						<div>
+							<p class="desc text-center">Все для ванной комнаты</p>
+						</div>			
+						<div>
+							<p class="desc text-center">Секция 134</p>
+						</div>						
+					</div>
+					<div class="col-lg-3 col-md-4 col-sm-6 equalheight">
+						<div class="image center-block">
+							<img src="img/shop/shokoladkin.png" class="center-block img-thumbnail img-responsive" alt="остров магазины, кафе, салоны красоты, аренда торговых площадей, шоколадкин, Элитный шоколад">
+						</div>
+						<div>
+							<p class="name text-uppercase text-center">шоколадкин</p>
+						</div>
+						<div>
+							<p class="desc text-center">Элитный шоколад</p>
+						</div>	
+						<div>
+							<p class="desc text-center">Секция 124.1</p>
+						</div>						
+					</div>	
+					<div class="col-lg-3 col-md-4 col-sm-6 equalheight">
+						<div class="image center-block">
+							<img src="img/shop/serebro.png" class="center-block img-thumbnail img-responsive" alt="остров магазины, кафе, салоны красоты, аренда торговых площадей, серебро, Очень красивое серебро">
+						</div>
+						<div>
+							<p class="name text-uppercase text-center">серебро</p>
+						</div>
+						<div>
+							<p class="desc text-center">Очень красивое серебро</p>
+						</div>	
+						<div>
+							<p class="desc text-center">Секция 136</p>
+						</div>						
+					</div>					
+<!-- 				</div>
+				<div class="row"> -->
+					<div class="col-lg-3 col-md-4 col-sm-6 equalheight">
+						<div class="image center-block">
+							<img src="img/shop/soroka.png" class="center-block img-thumbnail img-responsive" alt="остров магазины, кафе, салоны красоты, аренда торговых площадей">
+						</div>
+						<div>
+							<p class="name text-uppercase text-center">сорока</p>
+						</div>
+						<div>
+							<p class="desc text-center">Бижутерия и аксессуары</p>
+						</div>	
+						<div>
+							<p class="desc text-center">Секция 117</p>
+						</div>						
+					</div>					
+					<div class="col-lg-3 col-md-4 col-sm-6 equalheight">
+						<div class="image center-block">
+							<img src="img/shop/style_ya.png" class="center-block img-thumbnail img-responsive" alt="остров магазины, кафе, салоны красоты, аренда торговых площадей">
+						</div>
+						<div>
+							<p class="name text-uppercase text-center">яркий стиль</p>
+						</div>
+						<div>
+							<p class="desc text-center">Одежда для ярких женщин и  девушек</p>
+						</div>
+						<div>
+							<p class="desc text-center">Секция 126</p>
+						</div>						
+					</div>
+					<div class="col-lg-3 col-md-4 col-sm-6 equalheight">
+						<div class="image center-block">
+							<img src="img/shop/vardek.png" class="center-block img-thumbnail img-responsive" alt="остров магазины, кафе, салоны красоты, аренда торговых площадей">
+						</div>
+						<div>
+							<p class="name text-uppercase text-center">вардек</p>
+						</div>
+						<div>
+							<p class="desc text-center">Кухни</p>
+						</div>					
+						<div>
+							<p class="desc text-center">Секция 135</p>
+						</div>						
+					</div>					
+<!-- 				</div>
+				<div class="row"> -->
+					<div class="col-lg-3 col-md-4 col-sm-6 equalheight">
+						<div class="image center-block">
+							<img src="img/shop/wom_dress_2.png" class="center-block img-thumbnail img-responsive" alt="остров магазины, кафе, салоны красоты, аренда торговых площадей">
+						</div>
+						<div>
+							<p class="name text-uppercase text-center">женская одежда</p>
+						</div>
+						<div>
+							<p class="desc text-center">Одежда для женщин</p>
+						</div>
+						<div>
+							<p class="desc text-center">Секция 141</p>
+						</div>						
+					</div>
+					<div class="col-lg-3 col-md-4 col-sm-6 equalheight">
+						<div class="image center-block">
+							<img src="img/shop/wom_dress.png" class="center-block img-thumbnail img-responsive" alt="остров магазины, кафе, салоны красоты, аренда торговых площадей, Женская одежда Беларусь. Парфюм, косметика">
+						</div>
+						<div>
+							<p class="name text-uppercase text-center">женская одежда</p>
+						</div>
+						<div>
+							<p class="desc text-center">Женская одежда Беларусь. Парфюм, косметика</p>
+						</div>	
+						<div>
+							<p class="desc text-center">Секция 116</p>
+						</div>						
+					</div>		
+					<div class="col-lg-3 col-md-4 col-sm-6 equalheight">
+						<div class="image center-block">
+							<img src="img/shop/ninopo4em.jpg" class="center-block img-thumbnail img-responsive" alt="остров магазины, кафе, салоны красоты, аренда торговых площадей, нипочем, Магазин весовой одежды">
+						</div>
+						<div>
+							<p class="name text-uppercase text-center">нипочем</p>
+						</div>
+						<div>
+							<p class="desc text-center">Магазин весовой одежды</p>
+						</div>	
+						<div>
+							<p class="desc text-center">Секция 114</p>
+						</div>						
+					</div>						
+				</div>
+			</div>
+		</section>
+		<a id="services"><section class="services"></a>
+			<div class="container">
+				<p class="title-name text-uppercase text-center">услуги</p>
+				<div class="row">
+					<div class="col-lg-3 col-md-4 col-sm-6 equalheight">
+						<div class="image center-block">
+							<img src="img/services/newsky_serv.png" class="center-block img-thumbnail img-responsive" alt="остров магазины, кафе, салоны красоты, аренда торговых площадей невский сервис">
+						</div>
+						<div>
+							<p class="name text-uppercase text-center">невский сервис</p>
+						</div>
+						<div>
+							<p class="desc text-center">Срочный ремонт iPhone, iPad, iPod</p>
+						</div>	
+						<div>
+							<p class="desc text-center">Секция 125.1</p>
+						</div>						
+					</div>
+					<div class="col-lg-3 col-md-4 col-sm-6 equalheight">
+						<div class="image center-block">
+							<img src="img/services/optica.png" class="center-block img-thumbnail img-responsive" alt="остров магазины, кафе, салоны красоты, аренда торговых площадей оптика центр">
+						</div>
+						<div>
+							<p class="name text-uppercase text-center">оптика центр</p>
+						</div>
+						<div>
+							<p class="desc text-center">Оптика центр</p>
+						</div>
+						<div>
+							<p class="desc text-center">Секция 139</p>
+						</div>							
+					</div>
+					<div class="col-lg-3 col-md-4 col-sm-6 equalheight">
+						<div class="image center-block">
+							<img src="img/services/shokoladka.png" class="center-block img-thumbnail img-responsive" alt="остров магазины, кафе, салоны красоты, аренда торговых площадей шоколадка">
+						</div>
+						<div>
+							<p class="name text-uppercase text-center">шоколад</p>
+						</div>
+						<div>
+							<p class="desc text-center">Студия красоты</p>
+						</div>	
+						<div>
+							<p class="desc text-center">Секция 133</p>
+						</div>							
+					</div>	
+					
+				</div>
+			</div>
+		</section>
+		<a id="cafe"><section class="cafe"></a>
+			<div class="container">
+			<p class="title-name text-uppercase text-center">кафе</p>
+				<div class="row">
+					<div class="col-lg-3 col-md-4 col-sm-6 equalheight">
+						<div class="image">
+							<img src="img/cafe/ayva.png" class="center-block img-thumbnail img-responsive" alt="остров магазины, кафе, салоны красоты, аренда торговых площадей бар айва">
+						</div>
+						<div>
+							<p class="name text-uppercase text-center">AYVA delivery</p>
+						</div>
+						<div>
+							<p class="desc text-center">Смузи бар</p>
+						</div>
+						<div>
+							<p class="desc text-center">Секция 123</p>
+						</div>							
+					</div>
+					<div class="col-lg-3 col-md-4 col-sm-6 equalheight">
+						<div class="image">
+							<img src="img/cafe/azs_cofe.png" class="center-block img-thumbnail img-responsive" alt="остров магазины, кафе, салоны красоты, аренда торговых площадей кофе азс">
+						</div>
+						<div>
+							<p class="name text-uppercase text-center">кофе азс</p>
+						</div>
+						<div>
+							<p class="desc text-center">Кофе с собой</p>
+						</div>
+						<div>
+							<p class="desc text-center">Секция 124</p>
+						</div>							
+					</div>
+					<div class="col-lg-3 col-md-4 col-sm-6 equalheight">
+						<div class="image">
+							<img src="img/cafe/beer.png" class="center-block img-thumbnail img-responsive" alt="остров магазины, кафе, салоны красоты, аренда торговых площадей пивная">
+						</div>
+						<div>
+							<p class="name text-uppercase text-center">пиво</p>
+						</div>
+						<div>
+							<p class="desc text-center">Свежий розлив. Пиво, квас, медовуха, снеки</p>
+						</div>	
+						<div>
+							<p class="desc text-center">Секция 130.1</p>
+						</div>							
+					</div>	
+					<div class="col-lg-3 col-md-4 col-sm-6 equalheight">
+						<div class="image">
+							<img src="img/cafe/mardan.png" class="center-block img-thumbnail img-responsive" alt="остров магазины, кафе, салоны красоты, аренда торговых площадей пекарня мардан">
+						</div>
+						<div>
+							<p class="name text-uppercase text-center">мардан</p>
+						</div>
+						<div>
+							<p class="desc text-center">Пекарня</p>
+						</div>
+						<div>
+							<p class="desc text-center">Секция 115</p>
+						</div>							
+					</div>						
+				</div>
+			</div>		
+		</section>
+		<a id="about"><section class="about"></a>
+			<div class="container">
+				<p class="title-name text-uppercase text-center">об "острове"</p>
+				<div class="row">
+<!-- 					<div class="col-md-4">
+						<p class="about_text text-left"><span class="text-blue">"ОСТРОВ"</span> открылся в марте 2016 года.</p>
+						<p class="about_text text-left"><span class="text-blue">"ОСТРОВ"</span> расположен в Красногвардейском районе, МО “Пороховые”, в непосредственной близости от Кольцевой Автомобильной Дороги.</p>						
+						<p class="about_text text-left">Для посетителей <span class="text-blue">"ОСТРОВа"</span> работает бесплатная парковка:<br>
+							<ul>
+								<li>наземная на 230 машиномест;</li>
+								<li>подземная на 55 машиномест в цокольном этаже.</li>
+							</ul>
+						</p>						
+						<p class="about_text text-left"><p class="about_text text-left">Для покупателей без автомобилей в транспортной доступности м. Ладожская и м. пр. Большевиков. </p>						
+<!-- 						<p class="about_text text-left"><p class="about_text text-left"><p class="about_text text-left"><p class="about_text text-left">Для покупателей без автомобилей в транспортной доступности м. Ладожская и м. пр. Большевиков. </p> 
+					</div> -->
+					<!-- <div class="col-md-8"> -->
+						<!-- Карусель -->
+						<div id="myCarousel" class="carousel slide" data-interval="3500" data-ride="carousel">
+						  <!-- Индикаторы для карусели -->
+							<ol class="carousel-indicators">
+								<!-- Перейти к 0 слайду карусели с помощью соответствующего индекса data-slide-to="0" -->
+								<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+								<!-- Перейти к 1 слайду карусели с помощью соответствующего индекса data-slide-to="1" -->
+								<li data-target="#myCarousel" data-slide-to="1"></li>							
+							</ol>   
+						  <!-- Слайды карусели -->
+							<div class="carousel-inner center-block">
+							<!-- Слайды создаются с помощью контейнера с классом item, внутри которого помещается содержимое слайда -->
+								<!-- Слайд №1 -->
+								<div class="active item">
+									<img src="img/slide1.jpg" class="our_services__img center-block pull-right img-responsive" alt="торговый центр остров - внешний вид, магазины, кафе, салоны красоты, аренда торговых площадей">
+									<div class="carousel-caption">
+										<h3>"ОСТРОВ" открылся в марте 2016 года.</h3>
+										<p class="about_text text-left">"Остров" расположен в Красногвардейском районе, МО "Пороховые", в непосредственной близости от Кольцевой Автомобильной Дороги</p>	
+										<p class="about_text text-left">Современные транспортные развязки района позволяют с легкостью добираться до "Острова"
+										на автомобиле</p>
+									</div>
+								</div>
+								<!-- Слайд №2 -->
+								<div class="item">
+									  <img src="img/slide2.jpg" class="our_services__img center-block pull-right img-responsive" alt="остров магазины, кафе, салоны красоты, аренда торговых площадей">
+									  <div class="carousel-caption">
+										<h3>Для посетителей "ОСТРОВа" работает бесплатная парковка:<br></h3>
+											<p class="about_text text-left">
+											<ul>
+												<li class="about_text text-left">наземная на 230 машиномест;</li>
+												<li class="about_text text-left">подземная на 55 машиномест в цокольном этаже.</li>
+											</ul>
+											</p>
+									  </div>
+								</div>							
+							</div>
+					 <!-- Навигация для карусели 
+						  <a class="carousel-control left" href="#myCarousel" data-slide="prev">
+							<span class="glyphicon glyphicon-chevron-left"></span>
+						  </a>
+
+						  <a class="carousel-control right" href="#myCarousel" data-slide="next">
+							<span class="glyphicon glyphicon-chevron-right"></span>
+						  </a>					
+						</div>		
+					Карусель END -->					
+				</div>
+				<div class="row marg25">
+					<div class="col-sm-1"></div>
+					<div class="col-sm-2">
+						<img src="img/location.png" class="about_img center-block">
+							<p class="about_text text-center"><a href="#route">Санкт-Петербург, Индустриальный пр-т, д. 19</a></p>						
+					</div>
+					<div class="col-sm-2"></div>
+					<div class="col-sm-2">
+						<img src="img/email.png" class="about_img center-block">
+							<p class="about_text text-center"><a href="mailto:#">info@tkostrov.spb.ru</a><br>
+							<a href="mailto:#">ostrov-spb@mail.ru</a></p>							
+					</div>
+					<div class="col-sm-2"></div>
+					<div class="col-sm-2">					
+						<img src="img/clock.png" class="about_img center-block">
+							<p class="about_text text-center">с 10 до 23 без обеда и выходных</p>						
+					</div>
+					<div class="col-sm-1"></div>					
+				</div>
+			</div>				
+		</section>
+		<a id="route"><section class="route"></a>
+			<div class="container">
+				<p class="title-name text-uppercase text-center">как добраться</p>
+				<div class="row">	
+				<!-- 	<div class="col-md-8"> -->
+						<div class="map">
+						<script type="text/javascript" charset="utf-8" src="https://api-maps.yandex.ru/services/constructor/1.0/js/?sid=8AMfl0wAKLjFdOrdAPh7VqwjHV9ATGSg&width=100%&height=450&lang=ru_RU&sourceType=constructor"></script>
+						</div>
+				</div>
+				<p class="route_text marg25">
+					От станции метро "Ладожская" до <span class="text-blue">"ОСТРОВа"</span> можно добраться:
+				</p>
+				<div class="row marg25">
+					<div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+					<!--Медиа-компонент-->
+						<div class="media">
+							<!--Элемент a (ссылка), содержащий медиа-объект (изображение). Для элемента a задан класс .media-left, который располагает медиа-объект относительно контента слева-->
+							<!--Медиа-объект (изображение)-->
+							<div class="media-left">
+								<img class="media-object" src="img/bus.jpg" alt="остров магазины, кафе, салоны красоты, аренда торговых площадей">
+							</div>
+					  <!--Блок, содержащий контент-->
+						<div class="media-body">
+							<!--Некоторый текст-->
+							<p class="route_text">Автобусы:<br>24, 30</p>
+						</div>
+					</div>						
+					</div>
+					<div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+					<!--Медиа-компонент-->
+						<div class="media">
+							<!--Элемент a (ссылка), содержащий медиа-объект (изображение). Для элемента a задан класс .media-left, который располагает медиа-объект относительно контента слева-->
+							<!--Медиа-объект (изображение)-->
+							<div class="media-left">
+								<img class="media-object" src="img/tbus.jpg" alt="остров магазины, кафе, салоны красоты, аренда торговых площадей">
+							</div>
+					  <!--Блок, содержащий контент-->
+							<div class="media-body">
+								<!--Некоторый текст-->
+								<p class="route_text">Троллейбусы:<br>1, 22</p>
+							</div>
+						</div>	
+					</div>
+					<div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+					<!--Медиа-компонент-->
+						<div class="media">
+							<!--Элемент a (ссылка), содержащий медиа-объект (изображение). Для элемента a задан класс .media-left, который располагает медиа-объект относительно контента слева-->
+							<!--Медиа-объект (изображение)-->
+							<div class="media-left">
+								<img class="media-object" src="img/trail.jpg" alt="остров магазины, кафе, салоны красоты, аренда торговых площадей">
+							</div>
+					  <!--Блок, содержащий контент-->
+							<div class="media-body">
+								<!--Некоторый текст-->
+								<p class="route_text">Трамваи:<br>64, 10, 59, 8</p>
+							</div>
+						</div>	
+					</div>
+					<div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+					<!--Медиа-компонент-->
+						<div class="media">
+							<!--Элемент a (ссылка), содержащий медиа-объект (изображение). Для элемента a задан класс .media-left, который располагает медиа-объект относительно контента слева-->
+							<!--Медиа-объект (изображение)-->
+							<div class="media-left">
+								<img class="media-object" src="img/taxi.jpg" alt="остров магазины, кафе, салоны красоты, аренда торговых площадей">
+							</div>
+					  <!--Блок, содержащий контент-->
+							<div class="media-body">
+								<!--Некоторый текст-->
+								<p class="route_text">Маршрутные такси:<br>21, 167, 187, 401, 531</p>
+							</div>
+						</div>	
+					</div>					
+				</div>
+			</div>
+		</section>
+		<a id="employer"><section class="employer"></a>
+			<div class="container">
+				<p class="title-name text-uppercase text-center">арендаторам</p>
+				<div class="row">	
+					<p class="employer_text text-center">
+						Приглашаем арендаторов в <span class="text-blue">"ОСТРОВ"</span><br>По вопросам аренды обращаться:
+					</p>
+				</div>
+				<div class="row padding80">
+					<div class="row">
+						<div class="col-md-1">
+							<img src="img/email_big.png" class="">	
+						</div>
+						<div class="col-md-5">
+							<div> <!-- class="employer_vert_Align" -->
+								<p class="employer_text"><a href="mailto:#">info@tkostrov.spb.ru</a><br>
+								<a href="mailto:#">ostrov-spb@mail.ru</a></p>
+							</div>
+						</div>
+						<div class="col-md-1">
+							<img src="img/location_big.png" class="">						
+						</div>
+						<div class="col-md-5">
+							<address>
+								<p class="employer_text">Санкт-Петербург,<br>Индустриальный пр-т, 19</p>
+							</address>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+<a id="feed"><section class="form"></a>
+			<div class="container">		
+				<p class="title-name text-uppercase text-center">обратная связь</p>
+				<div class="row">		
+					<p class="employer_text text-center">
+					Ждём от Вас отзывов и предложений о сотрудничестве.
+					</p>
+				</div>
+			<form>			
+					<div class="row">
+						<div class="col-sm-6">
+							<input type="text" class="form-control form__input marg25" id="exampleInputName1" placeholder="Имя">
+						</div>
+						<div class="col-sm-6">
+							<input type="text" class="form-control form__input marg25" id="exampleInputLastName1" placeholder="Фамилия">
+						</div>					
+					</div>
+					<div class="row">
+						<div class="col-sm-6">
+							<input type="email" class="form-control form__input marg25" id="exampleInputEmail1" placeholder="E-mail">
+						</div>
+						<div class="col-sm-6">
+							<input type="tel" class="form-control form__input marg25" id="phone" placeholder="Телефон">
+						</div>					
+					</div>
+					<div class="row">
+						<div class="col-sm-12">				
+							<textarea class="form-control form__textarea marg25" placeholder="Сообщение" id="exampleInputTextArea1" rows=""3"></textarea>
+						</div>
+					</div>	
+					<div class="row">
+						<div class="col-sm-10"></div>
+						<div class="col-sm-1">
+							<button type="submit" class="btn btn-info marg25">Отправить</button>
+						</div>
+						<div class="col-sm-1"></div>
+					</div>						
+			</form>	
+			</div>
+		</section>
+	</main>
+	<footer>
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-2">
+					<p class="footer_text"><a href="/">TKOSTROV.RU 2016</a></p>
+				</div>
+				<div class="col-lg-8">
+					<nav class="bot_mnu text-uppercase">
+						<ul class="nav navbar-nav">
+							<li><a href="#shop">магазины</a></li>
+							<li><a href="#services">услуги</a></li>
+							<li><a href="#cafe">кафе</a></li>
+							<li><a href="#about">об "острове"</a></li>
+							<li><a href="#route">как добраться</a></li>
+							<li><a href="#employer">арендаторам</a></li>
+						</ul>					
+					</nav>
+				</div>
+				<div class="col-lg-1">
+<!-- Yandex.Metrika informer -->
+<a href="https://metrika.yandex.ru/stat/?id=36735145&amp;from=informer"
+target="_blank" rel="nofollow"><img src="https://informer.yandex.ru/informer/36735145/3_1_42464EFF_22262EFF_1_uniques"
+alt="Яндекс.Метрика" title="Яндекс.Метрика: данные за сегодня (просмотры, визиты и уникальные посетители)" /></a>
+<!-- /Yandex.Metrika informer -->
+
+<!-- Yandex.Metrika counter -->
+<script type="text/javascript">
+    (function (d, w, c) {
+        (w[c] = w[c] || []).push(function() {
+            try {
+                w.yaCounter36735145 = new Ya.Metrika({
+                    id:36735145,
+                    clickmap:true,
+                    trackLinks:true,
+                    accurateTrackBounce:true
+                });
+            } catch(e) { }
+        });
+
+        var n = d.getElementsByTagName("script")[0],
+            s = d.createElement("script"),
+            f = function () { n.parentNode.insertBefore(s, n); };
+        s.type = "text/javascript";
+        s.async = true;
+        s.src = "https://mc.yandex.ru/metrika/watch.js";
+
+        if (w.opera == "[object Opera]") {
+            d.addEventListener("DOMContentLoaded", f, false);
+        } else { f(); }
+    })(document, window, "yandex_metrika_callbacks");
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/36735145" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter -->
+				</div>
+				<div class="col-lg-1">
+					<a href="#top">
+						<img src="img/up.png" alt="перейти на верх страницы">
+					</a>
+				</div>
+			</div>	
+		</div>			
+	</footer>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>	
+	<script>
+		  var k = jQuery.noConflict();
+	  function equalHeight(group) {
+		var tallest = 0;
+		group.each(function() {
+		  thisHeight = k(this).height();
+		  if(thisHeight > tallest) {
+			tallest = thisHeight;
+		  }
+		});
+		group.height(tallest);
+	  }        
+	  k(document).ready(function(){
+		equalHeight(k(".equalheight"));
+	  });
+	 </script>
+	 <script>
+	//Кнопка "Наверх"
+	//Документация:
+	//http://api.jquery.com/scrolltop/
+	//http://api.jquery.com/animate/
+	jQuery("#top").click(function () {
+		jQuery("body, html").animate({
+			scrollTop: 0
+		}, 800);
+		return false;
+	});
+	</script>
+	<script> 	
+    jQuery('a[href^="#"], a[href^="."]').click( function(){ // если в href начинается с # или ., то ловим клик
+	    var scroll_el = jQuery(this).attr('href'); // возьмем содержимое атрибута href
+        if (jQuery(scroll_el).length != 0) { // проверим существование элемента чтобы избежать ошибки
+	    jQuery('html, body').animate({ scrollTop: jQuery(scroll_el).offset().top }, 500); // анимируем скроолинг к элементу scroll_el
+        }
+	    return false; // выключаем стандартное действие
+    }); 
+	</script>
+  </body>
 </html>

@@ -1,0 +1,31 @@
+@font-face {
+		font-family: "Myriad Pro";
+		src: url("../fonts/MyriadPro/MyriadPro-Bold.otf");
+		
+	font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+		font-family: "Myriad Pro";
+		src: url("../fonts/MyriadPro/MyriadPro-Regular.otf");
+		
+	font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+		font-family: "Minion Pro";
+		src: url("../fonts/minionPro/MinionPro-Regular.otf");
+		
+	font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+		font-family: "Minion Pro";
+		src: url("../fonts/minionPro/MinionPro-Bold.otf");
+		
+	font-weight: bold;
+    font-style: normal;
+} 

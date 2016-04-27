@@ -1,0 +1,4 @@
+<FilesMatch "\.html$">
+SetHandler php-cgi-script
+Action php-cgi-script /cgi-php/php-cgi
+</FilesMatch>
