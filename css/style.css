@@ -72,10 +72,11 @@ body {
 }
 /* HEADER START */
 header {
+	background-attachment: fixed;
 	min-height: 640px;
 	background-image: url(../img/bg.jpg);
-	background-size: cover;
-	background-position: center;
+/* 	background-size: cover;
+	background-position: center; */
         -webkit-background-size: cover;
         -moz-background-size: cover;
         -o-background-size: cover;	
@@ -244,7 +245,19 @@ float: left;
 footer img {
 	padding-top: 10px;	
 }
-.bot_mnu {
-	
+.bot_mnu {	
+}
+#scrollup {
+position: fixed; /* фиксированная позиция */
+opacity: 0.8; /* прозрачность */
+padding: 15px 10px 10px; /* отступы */
+background: #fff;
+border-radius: 5px; /* скругление углов */
+-webkit-border-radius: 5px;
+-moz-border-radius: 5px;
+left: 10px; /* отступ слева */
+bottom: 10px; /* отступ снизу */
+display: none; /* спрятать блок */
+cursor: pointer;
 }
 /*FOOTER END*/

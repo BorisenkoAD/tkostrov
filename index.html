@@ -4,7 +4,8 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+	
+<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
 	
 <!-- <link rel="image_src" href="http://сайт.ru/img/externallogo1.jpg" /> //для вконтакте
 <meta property="og:title" content="Название сраницы" />
@@ -55,43 +56,45 @@
 	<div style="display:none">
 	<img src="http://tkostrov.spb.ru/img/bg_dash_small.jpg"/>
 	</div>
-	<a id="top"></a>
+<!--	<a id="top"></a>-->
     <header>
-		<nav role="navigation" class="navbar navbar-default">
-	  <!-- Brand and toggle get grouped for better mobile display -->
-			<div class="navbar-header">
-				<button type="button" data-target="#navbarCollapse" data-toggle="collapse" class="navbar-toggle">
-					<span class="sr-only">Toggle navigation</span>
-					<span class="icon-bar"></span>
-					<span class="icon-bar"></span>
-					<span class="icon-bar"></span>
-				</button>
-				<a href="#" class="navbar-brand text-uppercase"><span class="text-blue__brand">остров</span></a>
-			</div>
-			<!-- Collection of nav links, forms, and other content for toggling -->
-			<div id="navbarCollapse" class="collapse navbar-collapse text-uppercase">
-				<ul class="nav navbar-nav">
-					<li><a href="#shop">магазины</a></li>
-					<li><a href="#services">услуги</a></li>
-					<li><a href="#cafe">кафе</a></li>
-					<li><a href="#about">об "острове"</a></li>
-					<li><a href="#route">как добраться</a></li>
-					<li><a href="#employer">арендаторам</a></li>
-					<li><a href="#feed">обратная связь</a></li>
-				</ul>
-				<div class="time_to_work hidden-xs hidden-sm hidden-md">
-				<DIV class="clock"><img src="img/small_clock.png" alt="остров магазины, кафе, салоны красоты, аренда торговых площадей"></DIV>
-				<div class="timeTW">10 - 23</div>
+	<div data-stellar-background-ratio="0.5">
+	</div>
+				<nav role="navigation" class="navbar navbar-default">
+			  <!-- Brand and toggle get grouped for better mobile display -->
+					<div class="navbar-header">
+						<button type="button" data-target="#navbarCollapse" data-toggle="collapse" class="navbar-toggle">
+							<span class="sr-only">Toggle navigation</span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+						</button>
+						<a href="#" class="navbar-brand text-uppercase"><span class="text-blue__brand">остров</span></a>
+					</div>
+					<!-- Collection of nav links, forms, and other content for toggling -->
+					<div id="navbarCollapse" class="collapse navbar-collapse text-uppercase">
+						<ul class="nav navbar-nav">
+							<li><a href="#shop">магазины</a></li>
+							<li><a href="#services">услуги</a></li>
+							<li><a href="#cafe">кафе</a></li>
+							<li><a href="#about">об "острове"</a></li>
+							<li><a href="#route">как добраться</a></li>
+							<li><a href="#employer">арендаторам</a></li>
+							<li><a href="#feed">обратная связь</a></li>
+						</ul>
+						<div class="time_to_work hidden-xs hidden-sm hidden-md">
+						<DIV class="clock"><img src="img/small_clock.png" alt="остров магазины, кафе, салоны красоты, аренда торговых площадей"></DIV>
+						<div class="timeTW">10 - 23</div>
+						</div>
+					</div>
+				 </nav>
+			<div class="container">
+				<div class="row">
+					<p class="header__text text-white__name text-uppercase text-center">остров</p>
+					<img src="img/line.png" class="header__img mg-responsive center-block">
+					<p class="text-uppercase text-white__slogan text-center">зайди и отдохни</p>
 				</div>
 			</div>
-		 </nav>
-	<div class="container">
-		<div class="row">
-			<p class="header__text text-white__name text-uppercase text-center">остров</p>
-			<img src="img/line.png" class="header__img mg-responsive center-block">
-			<p class="text-uppercase text-white__slogan text-center">зайди и отдохни</p>
-		</div>
-	</div>
 	</header>
 	<main>
 	<a id="shop">
@@ -704,13 +707,16 @@ alt="Яндекс.Метрика" title="Яндекс.Метрика: данны
 <noscript><div><img src="https://mc.yandex.ru/watch/36735145" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
 <!-- /Yandex.Metrika counter -->
 				</div>
+				<div id="scrollup"><img alt="Прокрутить вверх" src="img/up.png"></div>
 			</div>	
 		</div>			
 	</footer>
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="js/bootstrap.min.js"></script>	
+    <script src="js/bootstrap.min.js"></script>
+	<script src="libs/stellar/jquery.stellar.min.js"></script>
+	<script src="libs/scrollup/scrollup.js"></script>
 	<script>
 	// выравнивание по высоте в блоках
 		  var k = jQuery.noConflict();
@@ -727,8 +733,7 @@ alt="Яндекс.Метрика" title="Яндекс.Метрика: данны
 	  k(document).ready(function(){
 		equalHeight(k(".equalheight"));
 	  });
-	 </script>
-
+	</script>
 	<script> 	
     jQuery('a[href^="#"], a[href^="."]').click( function(){ // если в href начинается с # или ., то ловим клик
 	    var scroll_el = jQuery(this).attr('href'); // возьмем содержимое атрибута href
@@ -737,6 +742,15 @@ alt="Яндекс.Метрика" title="Яндекс.Метрика: данны
         }
 	    return false; // выключаем стандартное действие
     }); 
+	</script>
+	<script> 
+	//Stellar - Parallax Plugin
+	//Документация: https://github.com/markdalgleish/stellar.js
+	//HTML: <div class="parallax" data-stellar-background-ratio="0.5"></div>
+	jQuery.stellar({
+		horizontalScrolling: false,
+		responsive: true
+	});
 	</script>
   </body>
 </html>
