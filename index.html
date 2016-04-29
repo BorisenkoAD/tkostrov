@@ -4,46 +4,18 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-	
-<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-	
-<!-- <link rel="image_src" href="http://сайт.ru/img/externallogo1.jpg" /> //для вконтакте
-<meta property="og:title" content="Название сраницы" />
-<meta property="og:type" content="website"/>
-<meta property="og:image" content="http://сайт.ru/img/externallogo1.jpg" />  //фото для фейсбука, вибера, скайпа и пр.
-<meta property="og:url" content="http://сайт.ru/" /> //адрес сайта
-<meta property="og:description" content="Описание сайта." />
-<meta property="og:site_name" content="Название сайта" />
-<meta property="og:locale" content="ru_RU" />
-<meta property="fb:admins" content="100009041660000" />  //id админа фейсбука для статистики
-    <!-- Google Plus -->
-<!-- <meta itemprop="name" content="Название страницы"/>
-<meta itemprop="description" content="Описание страницы"/>
-<meta itemprop="image" content="http://сайт.ru/img/externallogo.jpg"/> -->
-    <!-- Twitter -->
-<!-- <meta name="twitter:card" content="summary"/>  <!-- Тип окна -->
-<!-- <meta name="twitter:site" content="название сайта"/>
-<meta name="twitter:title" content="Название страницы">
-<meta name="twitter:description" content="Описание страницы"/>
-<meta name="twitter:creator" content="имя создателя"/>
-<meta name="twitter:image:src" content="http://сайт.ru/img/externallogo.jpg"/>
-<meta name="twitter:domain" content="сайт.ru"/> -->
-    <!-- Apple -->             <!-- //картинки для избранного и на рабочий стол для apple устройств
-<link rel="apple-touch-icon" href="touch-icon-iphone.png">
-<link rel="apple-touch-icon" sizes="76x76" href="touch-icon-ipad.png">
-<link rel="apple-touch-icon" sizes="120x120" href="touch-icon-iphone-retina.png">
-<link rel="apple-touch-icon" sizes="152x152" href="touch-icon-ipad-retina.png"> -->
 
 	<link rel="apple-touch-icon" href="http://tkostrov.spb.ru/test/img/bg_dash_small.jpg" />
 	<meta property="og:image" content="http://tkostrov.spb.ru/test/img/bg_dash_small.jpg" />
-    <title>ОСТРОВ</title>
+    <title>ОСТРОВ на Индустриальном 19</title>
 	<meta name="description" content="Остров на Индустриальном 19"> 
-	<meta name="keywords" content="торговый центр комплекс остров аренда магазин павильон услуги кафе арендатор">
+	<meta name="keywords" content="торговый центр комплекс остров аренда магазин павильон услуги кафе арендатор индустриальный">
     <!-- Bootstrap -->
 	<link href="css/normalize.css" rel="stylesheet">
     <link href="css/bootstrap.css" rel="stylesheet">
 	<link href="css/fonts.css" rel="stylesheet">
 	<link href="css/style.css" rel="stylesheet">
+	<link rel="stylesheet" media="screen,projection" href="css/ui.totop.css" />
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -425,19 +397,6 @@
 			<div class="container">
 				<p class="title-name text-uppercase text-center">об "острове"</p>
 				<div class="row">
-<!-- 					<div class="col-md-4">
-						<p class="about_text text-left"><span class="text-blue">"ОСТРОВ"</span> открылся в марте 2016 года.</p>
-						<p class="about_text text-left"><span class="text-blue">"ОСТРОВ"</span> расположен в Красногвардейском районе, МО “Пороховые”, в непосредственной близости от Кольцевой Автомобильной Дороги.</p>						
-						<p class="about_text text-left">Для посетителей <span class="text-blue">"ОСТРОВа"</span> работает бесплатная парковка:<br>
-							<ul>
-								<li>наземная на 230 машиномест;</li>
-								<li>подземная на 55 машиномест в цокольном этаже.</li>
-							</ul>
-						</p>						
-						<p class="about_text text-left"><p class="about_text text-left">Для покупателей без автомобилей в транспортной доступности м. Ладожская и м. пр. Большевиков. </p>						
-<!-- 						<p class="about_text text-left"><p class="about_text text-left"><p class="about_text text-left"><p class="about_text text-left">Для покупателей без автомобилей в транспортной доступности м. Ладожская и м. пр. Большевиков. </p> 
-					</div> -->
-					<!-- <div class="col-md-8"> -->
 						<!-- Карусель -->
 						<div id="myCarousel" class="carousel slide" data-interval="3500" data-ride="carousel">
 						  <!-- Индикаторы для карусели -->
@@ -706,7 +665,6 @@ alt="Яндекс.Метрика" title="Яндекс.Метрика: данны
 <noscript><div><img src="https://mc.yandex.ru/watch/36735145" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
 <!-- /Yandex.Metrika counter -->
 				</div>
-				<div id="scrollup"><img alt="Прокрутить вверх" src="img/up.png"></div>
 			</div>	
 		</div>			
 	</footer>
@@ -715,7 +673,26 @@ alt="Яндекс.Метрика" title="Яндекс.Метрика: данны
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="js/bootstrap.min.js"></script>
 	<script src="libs/stellar/jquery.stellar.min.js"></script>
-	<script src="libs/scrollup/scrollup.js"></script>
+	<!-- easing plugin ( optional ) -->
+	<script src="js/easing.js" type="text/javascript"></script>
+	<!-- UItoTop plugin -->
+	<script src="js/jquery.ui.totop.js" type="text/javascript"></script>
+	<!-- Starting the plugin -->
+	<script type="text/javascript">
+	jQuery(document).ready(function() {
+		
+		var defaults = {
+		containerID: 'toTop', // fading element id
+		containerHoverID: 'toTopHover', // fading element hover id
+		scrollSpeed: 1200,
+		easingType: 'linear'
+		};
+		
+		 
+		jQuery().UItoTop({ easingType: 'easeOutQuart' });
+		 
+		});
+	</script>
 	<script>
 	//equalheight - одинаковая высота колонок
 		  var k = jQuery.noConflict();

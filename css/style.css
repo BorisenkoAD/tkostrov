@@ -250,7 +250,7 @@ footer img {
 #scrollup {
 position: fixed; /* фиксированная позиция */
 opacity: 0.8; /* прозрачность */
-padding: 15px 10px 10px; /* отступы */
+padding: 10px 10px 10px; /* отступы */
 background: #fff;
 border-radius: 5px; /* скругление углов */
 -webkit-border-radius: 5px;
