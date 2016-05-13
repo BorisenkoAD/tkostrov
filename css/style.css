@@ -172,6 +172,7 @@ header {
 	font-size: 35px;
  	line-height: 1; 
 	padding-top: 11px;
+	margin-bottom: 25px;
 }
 .employer_text a, a:hover {
 	text-decoration: none; 
@@ -214,7 +215,9 @@ header {
 	width: 100%;
 	padding-left: 10px;
 }
-
+.form__required {
+	color: red;
+}
 /*FORM END*/
 
 /*FOOTER START*/
