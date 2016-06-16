@@ -93,7 +93,6 @@ header {
 	float:right;
 	color: #18ceec;
 	font-size: 35px;
-	
 }
 .clock, .timeTW {
 	display: inline-block;
@@ -169,7 +168,7 @@ header {
 	padding-bottom: 50px;
 }
 .employer_text {
-	font-size: 35px;
+	font-size: 18px;
  	line-height: 1; 
 	padding-top: 11px;
 	margin-bottom: 25px;
@@ -187,7 +186,7 @@ header {
 .form {
 	background-color: #fff;
 	padding-bottom: 50px;
-	padding-top: 50px;
+	/* padding-top: 50px; */
 }
 .form_text {
 	font-size: 35px;
