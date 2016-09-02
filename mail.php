@@ -1,6 +1,6 @@
 <?php
 #!/usr/bin/php -q 
-$recepient = "info@tkostrov.spb.ru";
+$recepient = "podelu2012@mail.ru";
 $sitename = "ОСТРОВ на Индустриальном 19";
 
 $name = substr(htmlspecialchars(trim($_POST['Name'])), 0, 100);
