@@ -241,7 +241,7 @@ footer ul {
 	padding: 0;
 }
 footer li {
-float: left;
+/* float: left; */
 }
 footer img {
 	padding-top: 10px;	
