@@ -31,6 +31,5 @@ if(isset($_POST['g-recaptcha-response']) && $_POST['g-recaptcha-response']) {
 			exit;
 		}
 	}
-
-
+}
 ?>
