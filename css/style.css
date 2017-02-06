@@ -1,10 +1,14 @@
 body {
-	font-family: Myriad Pro;
+	font-family: MyriadProRegular;
 }
 .item{
     background: #333;    
     text-align: center;
     height: 300px !important;
+}
+.menu-text__yarmarka {
+	color: #ff0200;
+	font-weight: bold;
 }
 .carousel{
     margin-top: 20px;
@@ -23,14 +27,64 @@ body {
 }
 .text-white__name {
 	font-family: Minion Pro;
-	font-size: 134px;
+	font-size: 74px;
 	font-weight: bold;
 	color: #fff;
 }
+.text-white__name_____yarmarka {
+	font-family: PTSansBold;
+	font-size: 90px;
+	font-weight: bold;
+	color: #fff;	
+}
+.ts {
+	text-shadow: 
+		-0   -3px 0   #FB0000,
+		 0   -3px 0   #FB0000,
+		-0    3px 0   #FB0000,
+		 0    3px 0   #FB0000,
+		-3px -0   0   #FB0000,
+		 3px -0   0   #FB0000,
+		-3px  0   0   #FB0000,
+		 3px  0   0   #FB0000,
+		-1px -3px 0   #FB0000,
+		 1px -3px 0   #FB0000,
+		-1px  3px 0   #FB0000,
+		 1px  3px 0   #FB0000,
+		-3px -1px 0   #FB0000,
+		 3px -1px 0   #FB0000,
+		-3px  1px 0   #FB0000,
+		 3px  1px 0   #FB0000,
+		-2px -3px 0   #FB0000,
+		 2px -3px 0   #FB0000,
+		-2px  3px 0   #FB0000,
+		 2px  3px 0   #FB0000,
+		-3px -2px 0   #FB0000,
+		 3px -2px 0   #FB0000,
+		-3px  2px 0   #FB0000,
+		 3px  2px 0   #FB0000,
+		-3px -3px 0   #FB0000,
+		 3px -3px 0   #FB0000,
+		-3px  3px 0   #FB0000,
+		 3px  3px 0   #FB0000,
+		-3px -3px 0   #FB0000,
+		 3px -3px 0   #FB0000,
+		-3px  3px 0   #FB0000,
+		 3px  3px 0   #FB0000;
+}
+
+
 .text-white__slogan {
 	font-family: Minion Pro;
 	font-size: 72px;
 	color: #fff;
+}
+.text-red__date_yarmarka {
+	font-family: PTSansBold;
+	font-size: 75px;
+	color: #ff0200;
+	font-weight: bold;
+
 }
 .title-name {
 	font-family: Lucida Sans Unicode;
@@ -86,8 +140,11 @@ header {
 .header__text {
 	padding-top: 345px;
 }
+.header__text___yarmarka {
+
+}
 .header__img {
-	margin-top: -50px;
+	/* margin-top: -50px; */
 }
 .time_to_work {
 	float:right;
@@ -98,8 +155,75 @@ header {
 	display: inline-block;
 	vertical-align: top;
 }
+.yarmarka {
+	    line-height: 1;
+	background-color: #fefe00;
+	background: linear-gradient(to top, #ff6f00 10%, #fff800 40%, #ff6f00 90%);
+/* 	background-color: #fefe00;
+	background-image: url(../img/yarmarka/bg_yarmarka.png);
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;	 */
+}
 /* HEADER END */
 
+/* YARMARKA START */
+.yarmarka_body {
+	background: linear-gradient(to top, #ff6f00 10%, #fff800 40%, #ff6f00 90%);
+	min-height: 640px;
+	background-color: #fefe00;
+/* 	background-image: url(../img/yarmarka/bg_yarmarka_body.png);
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;	 */
+padding-bottom: 50px;		
+}
+.image_yarmarka {
+	background-image: url(../img/yarmarka/cell.png);
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;	
+	height: 323px;
+	width: 384px;
+}
+.title-name__yarmarka {
+	font-family: Lucida Sans Unicode;
+	font-size: 30px;
+	color: #fff;
+	padding-top: 47px;
+	text-shadow: 
+		-0   -2px 0   #FB0000,
+		 0   -2px 0   #FB0000,
+		-0    2px 0   #FB0000,
+		 0    2px 0   #FB0000,
+		-2px -0   0   #FB0000,
+		 2px -0   0   #FB0000,
+		-2px  0   0   #FB0000,
+		 2px  0   0   #FB0000,
+		-1px -2px 0   #FB0000,
+		 1px -2px 0   #FB0000,
+		-1px  2px 0   #FB0000,
+		 1px  2px 0   #FB0000,
+		-2px -1px 0   #FB0000,
+		 2px -1px 0   #FB0000,
+		-2px  1px 0   #FB0000,
+		 2px  1px 0   #FB0000,
+		-2px -2px 0   #FB0000,
+		 2px -2px 0   #FB0000,
+		-2px  2px 0   #FB0000,
+		 2px  2px 0   #FB0000,
+		-2px -2px 0   #FB0000,
+		 2px -2px 0   #FB0000,
+		-2px  2px 0   #FB0000,
+		 2px  2px 0   #FB0000;
+}
+.text-cell__yarmarka {
+	color: #6a0101;
+	font-family: Lucida Sans Unicode;
+	font-size: 24px;
+	font-weight: bold;	
+}
+/* YARMARKA END */
 /*SHOPS START*/
 .shops{
 	background-color: #fff;
