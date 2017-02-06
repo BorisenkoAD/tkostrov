@@ -1,17 +1,13 @@
 <?php
 #!/usr/bin/php -q 
-// ваш секретный ключ
-$secret = '6LfVfRQUAAAAAOXtGuMSkVcjuiao1NEabTaDmN-K';
-// однократное включение файла autoload.php (клиентская библиотека reCAPTCHA PHP)
-require_once (dirname(__FILE__).'/recaptcha/src/autoload.php');
-// если в массиве $_POST существует ключ g-recaptcha-response, то...
-if (isset($_POST['g-recaptcha-response'])) {
-  // создать экземпляр службы recaptcha, используя секретный ключ
-  $recaptcha = new \ReCaptcha\ReCaptcha($secret);
-  // получить результат проверки кода recaptcha
-  $resp = $recaptcha->verify($_POST['g-recaptcha-response'], $_SERVER['REMOTE_ADDR']);
-  // если результат положительный, то...
-  if ($resp->isSuccess()){
+if(isset($_POST['g-recaptcha-response']) && $_POST['g-recaptcha-response']) {
+	$secret = '6LfVfRQUAAAAAOXtGuMSkVcjuiao1NEabTaDmN-K';
+	$ip = $_SERVER['REMOTE_ADDR'];
+	$response = $_POST['g-recaptcha-response'];
+	$rsp = file_get_contents("https://www.google.com/recaptcha/api/siteverify?secret=$secret&response=$response&remoteip=$ip");
+	$arr = json_decode($rsp, TRUE);
+	if($arr['success']){
+
     // действия, если код captcha прошёл проверку
 		$recepient = "info@tkostrov.spb.ru";
 		$sitename = "ОСТРОВ на Индустриальном 19";
@@ -34,18 +30,7 @@ if (isset($_POST['g-recaptcha-response'])) {
 				  "href=\"http://tkostrov.spb.ru/\">Здесь</a> самостоятельно\n";
 			exit;
 		}
-  } else {
-    // иначе передать ошибку
-    $errors = $resp->getErrorCodes();
-    $data['error-captcha']=$errors;
-    $data['msg']='Код капчи не прошёл проверку на сервере';
-    $data['result']='error';
-  }
- 
-} else {
-  //ошибка, не существует ассоциативный массив $_POST["send-message"]
-  $data['result']='error';
-}
+	}
 
 
 ?>
