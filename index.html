@@ -19,6 +19,7 @@
 	<link href="css/style.css" rel="stylesheet">
 	<link href="css/font-awesome.min.css" rel="stylesheet">		
 	<link rel="stylesheet" media="screen,projection" href="css/ui.totop.css" />
+	<script src='https://www.google.com/recaptcha/api.js'></script>
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -735,7 +736,7 @@
 					Ждём от Вас отзывов и предложений о сотрудничестве.
 					</p>
 				</div>
-			<form class="form-horizontal" method="post" action="mail.php">			
+				<form class="form-horizontal" method="post" action="mail.php">			
 					<div class="row">	
 						<div class="col-sm-10">
 							<div class="form-group">
@@ -789,17 +790,26 @@
 					<div class="row">
 						<div class="col-sm-10">
 							<div class="form-group">
+								<div class="col-xs-3"></div>
+								<div class="col-xs-9">							
+									<div class="g-recaptcha" data-sitekey="6LfVfRQUAAAAAJtNS_Tpc2Mth67T7SMS2j1oO_Ai"></div>							
+								</div>
+							</div>
+						</div>						
+					</div>				
+					<div class="row">
+						<div class="col-sm-10">
+							<div class="form-group">
 								<div class="col-xs-3">
 								</div>
 								<div class="col-xs-9">
 									<button type="submit" class="btn btn-info">Отправить</button>
 								</div>
-								</div>	
-							</div>
+							</div>	
 						</div>
 					</div>
-				</div>
-			</form>	
+			</form>
+			</div>
 			</div>
 		</section>
 	</main>
