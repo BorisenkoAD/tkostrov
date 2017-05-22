@@ -170,7 +170,7 @@ header {
 /* YARMARKA START */
 .yarmarka_body {
 	background: linear-gradient(to top, #ff6f00 10%, #fff800 40%, #ff6f00 90%);
-	min-height: 640px;
+/*	min-height: 640px;*/
 	background-color: #fefe00;
 /* 	background-image: url(../img/yarmarka/bg_yarmarka_body.png);
         -webkit-background-size: cover;
